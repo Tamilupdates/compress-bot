@@ -1,4 +1,4 @@
-#  This file is part of the VIDEOconvertor distribution.
+#  This file is part of the compress-bot distribution.
 #  Copyright (c) 2021 vasusen-code ; All rights reserved. 
 #
 #  This program is free software: you can redistribute it and/or modify
@@ -10,7 +10,7 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 #  General Public License for more details.
 #
-#  License can be found in < https://github.com/vasusen-code/VIDEOconvertor/blob/public/LICENSE> .
+#  License can be found in < https://github.com/Tamilupdates/compress-bot/blob/public/LICENSE> .
 
 import heroku3 
 
@@ -48,7 +48,7 @@ async def force_sub(id):
 #Thumbnail--------------------------------------------------------------------------------------------------------------
 
 async def set_thumbnail(event, img):
-    db = Database(MONGODB_URI, 'videoconvertor')
+    db = Database(MONGODB_URI, 'compress-bot')
     edit = await event.client.send_message(event.chat_id, 'Trying to process.')
     try:
         path = await event.client.download_media(img)
@@ -61,7 +61,7 @@ async def set_thumbnail(event, img):
     await edit.edit("Done!")
     
 async def rem_thumbnail(event):
-    db = Database(MONGODB_URI, 'videoconvertor')
+    db = Database(MONGODB_URI, 'compress-bot')
     edit = await event.client.send_message(event.chat_id, 'Trying.')
     T = await db.get_thumb(event.sender_id)
     if T is None:

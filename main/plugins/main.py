@@ -1,4 +1,4 @@
-#  This file is part of the VIDEOconvertor distribution.
+#  This file is part of the compress-bot distribution.
 #  Copyright (c) 2021 vasusen-code ; All rights reserved. 
 #
 #  This program is free software: you can redistribute it and/or modify
@@ -10,7 +10,7 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 #  General Public License for more details.
 #
-#  License can be found in < https://github.com/vasusen-code/VIDEOconvertor/blob/public/LICENSE> .
+#  License can be found in < https://github.com/Tamilupdates/compress-bot/blob/public/LICENSE> .
 
 import os, time, asyncio
 
@@ -36,7 +36,7 @@ forcesubtext = f"Hey there!To use this bot you've to join @{FORCESUB_UN}.\n\nAls
 
 @Drone.on(events.NewMessage(incoming=True,func=lambda e: e.is_private))
 async def compin(event):
-    db = Database(MONGODB_URI, 'videoconvertor')
+    db = Database(MONGODB_URI, 'compress-bot')
     if event.is_private:
         media = event.media
         if media:

@@ -1,4 +1,4 @@
-#  This file is part of the VIDEOconvertor distribution.
+#  This file is part of the compress-bot distribution.
 #  Copyright (c) 2021 vasusen-code ; All rights reserved. 
 #
 #  This program is free software: you can redistribute it and/or modify
@@ -10,7 +10,7 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 #  General Public License for more details.
 #
-#  License can be found in < https://github.com/vasusen-code/VIDEOconvertor/blob/public/LICENSE> .
+#  License can be found in < https://github.com/Tamilupdates/compress-bot/blob/public/LICENSE> .
 
 import os, time, requests
 
@@ -29,7 +29,7 @@ from LOCAL.localisation import SUPPORT_LINK
 
 async def media_rename(event, msg, new_name):
     edit = await event.client.send_message(event.chat_id, 'Trying to process.', reply_to=msg.id)
-    db = Database(MONGODB_URI, 'videoconvertor')
+    db = Database(MONGODB_URI, 'compress-bot')
     T = await db.get_thumb(event.sender_id)
     if T is not None:
         ext = T.split("/")[4]

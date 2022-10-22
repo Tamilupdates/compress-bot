@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="./LOCAL/Wavy_Lst-14_Single-06.jpg" alt="VideoConvertor poster">
+  <img src="./LOCAL/Wavy_Lst-14_Single-06.jpg" alt="compress-bot poster">
 </p>
 <h1 align="center">
   <b>ᴠɪᴅᴇᴏ ᴄᴏɴᴠᴇʀᴛᴏʀ</b>
 </h1>
 
 
-<p align="left"><a href="https://github.com/https://github.com/Tamilupdates/compress-bot"><img src="https://github-readme-stats.vercel.app/api/pin?username=vasusen-code&show_icons=true&theme=dracula&hide_border=true&repo=VideoConvertor"></a></p>
+<p align="left"><a href="https://github.com/https://github.com/Tamilupdates/compress-bot"><img src="https://github-readme-stats.vercel.app/api/pin?username=vasusen-code&show_icons=true&theme=dracula&hide_border=true&repo=compress-bot"></a></p>
   
 `Main branch` - For personal use
 <p align="left">
