@@ -9,7 +9,7 @@ CHANNEL_LINK = "https://t.me/Nanthakps"
 
 SUPPORT_LINK = "https://t.me/Tamilupdatez"
 
-info_text = "This bot is developed by @MaheshChauhan\n\nWritten in python library TELETHON.\n\nBot by : @Nanthakps\nSupport : @TeamDrone\n\nV1.4"   
+info_text = "This bot is developed by @Nanthakps\n\nWritten in python library TELETHON.\n\nBot by : @Nanthakps\n\nV1.4"   
 
 help_text = """**v1.4**
 

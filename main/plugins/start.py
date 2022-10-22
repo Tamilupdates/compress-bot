@@ -49,8 +49,7 @@ async def notice(event):
 async def source(event):
     await event.edit(source_text,
                     buttons=[[
-                         Button.url("FOR PERSONAL USE", url="https://github.com/Tamilupdates/compress-bot/tree/main"),
-                         Button.url("FOR YOUR CHANNEL ", url="https://github.com/Tamilupdates/compress-bot/")]])
+                         Button.url("ADMIN", url="https://t.me/Nanthakps")]])
                          
                     
 @Drone.on(events.callbackquery.CallbackQuery(data="help"))
