@@ -1,3 +1,3 @@
 #!/bin/bash
-echo "starting VideoConvertor ~@DroneBots";
+echo "starting Video_Compresser";
 python3 -m main
