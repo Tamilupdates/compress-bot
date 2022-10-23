@@ -10,7 +10,7 @@
 <a href="https://github.com/Tamilupdates/compress-bot/tree/public"> <img src="https://img.shields.io/badge/Github-public%20branch-blueviolet?style=for-the-badge&logo=github" width="220""/></a>
 </p>
 
-# Public branch
+### Public branch
 To use it for your channel,Has forcesub, Database, LOG channel and ACCESS channel(To spy users).
   
 ## Variables required are:
@@ -51,7 +51,7 @@ bcast - Reply to any kind of message to broadcast it
 ```
 
   
-# Deploy (🌟Star the repo) 
+## Deploy (🌟Star the repo) 
   
 Deploy your own bot on `heroku`
 
