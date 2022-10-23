@@ -1,4 +1,4 @@
-### Video Compress Bot
+# Video Compress Bot
   
 `Main branch` - For personal use
 <p align="left">
@@ -13,7 +13,7 @@
 # Public branch
 To use it for your channel,Has forcesub, Database, LOG channel and ACCESS channel(To spy users).
   
-Variables required are:
+## Variables required are:
 * `API_ID`
 
 * `API_HASH`
@@ -69,10 +69,10 @@ Add these buildpacks if deploying manually:
 
 <p><a href="https://telegra.ph/Manual-Deploy-Video-Convertor-12-31"> <img src="https://img.shields.io/badge/Manual%20Deploy%20Tutorial-grey?style=for-the-badge&logo=telegraph" width="250""/></a></p>
 
-Deploy your bot on `Okteto`
+### Deploy your bot on `Okteto`
   
 [![Develop on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com)
 
-LICENSE:
+### LICENSE:
 
 [![License](https://www.gnu.org/graphics/gplv3-127x51.png)](LICENSE)
