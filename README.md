@@ -1,12 +1,4 @@
-<p align="center">
-  <img src="./LOCAL/Wavy_Lst-14_Single-06.jpg" alt="compress-bot poster">
-</p>
-<h1 align="center">
-  <b>ᴠɪᴅᴇᴏ ᴄᴏɴᴠᴇʀᴛᴏʀ</b>
-</h1>
-
-
-<p align="left"><a href="https://github.com/https://github.com/Tamilupdates/compress-bot"><img src="https://github-readme-stats.vercel.app/api/pin?username=vasusen-code&show_icons=true&theme=dracula&hide_border=true&repo=compress-bot"></a></p>
+### Video Compress Bot
   
 `Main branch` - For personal use
 <p align="left">
@@ -48,14 +40,16 @@ Variables required are:
 
 * `HEROKU_APP_NAME` - Your heroku app name(optional, add only if you want to restart directly from tg.)
                
-AUTH_USERS COMMANDS:
-  
-  - `/disallow <id>` : to ban
-  - `/allow <id>` : to unban
-  - `/users` : count total users
-  - `/msg <id>` : give this command replying to a message
-  - `/bcast` : Reply to any kind of message to broadcast it
-  - `menu` >> `settings` >>  `restart`
+
+## Commands (add via @botfather) :
+```
+disallow - <id> to ban
+allow - <id> to unban
+users - count total users
+msg - <id> give this command replying to a message
+bcast - Reply to any kind of message to broadcast it
+```
+
   
 # Deploy (🌟Star the repo) 
   
@@ -82,4 +76,3 @@ Deploy your bot on `Okteto`
 LICENSE:
 
 [![License](https://www.gnu.org/graphics/gplv3-127x51.png)](LICENSE)
-
