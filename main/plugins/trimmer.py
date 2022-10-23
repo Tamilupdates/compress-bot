@@ -24,7 +24,7 @@ from ethon.pyutils import rename
 
 from .. import Drone, BOT_UN
 
-from LOCAL.localisation import SUPPORT_LINK, JPG, JPG2, JPG3
+from LOCAL.localisation import SUPPORT_LINK
 
 async def trim(event, msg, st, et):
     Drone = event.client
@@ -74,11 +74,11 @@ async def trim(event, msg, st, et):
         duration = metadata["duration"]
         attributes = [DocumentAttributeVideo(duration=duration, w=width, h=height, supports_streaming=True)]
         uploader = await fast_upload(f'{out2}', f'{out2}', UT, Drone, edit, '**UPLOADING:**')
-        await Drone.send_file(event.chat_id, uploader, caption=text, thumb=JPG3, attributes=attributes, force_document=False)
+        await Drone.send_file(event.chat_id, uploader, caption=text, attributes=attributes, force_document=False)
     except Exception:
         try:
             uploader = await fast_upload(f'{out2}', f'{out2}', UT, Drone, edit, '**UPLOADING:**')
-            await Drone.send_file(event.chat_id, uploader, caption=text, thumb=JPG, force_document=True)
+            await Drone.send_file(event.chat_id, uploader, caption=text, force_document=True)
         except Exception as e:
             print(e)
             return await edit.edit(f"An error occured while uploading.\n\nContact [SUPPORT]({SUPPORT_LINK})", link_preview=False)

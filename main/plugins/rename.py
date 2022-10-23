@@ -24,7 +24,6 @@ from ethon.pyfunc import video_metadata
 from .. import Drone, BOT_UN
 
 from LOCAL.localisation import SUPPORT_LINK
-from LOCAL.localisation import JPG3 as t
 
 async def media_rename(event, msg, new_name):
     edit = await event.client.send_message(event.chat_id, 'Trying to process.', reply_to=msg.id)
@@ -32,9 +31,9 @@ async def media_rename(event, msg, new_name):
         if os.path.exists(f'./{event.sender_id}.jpg'):
             THUMB = f'./{event.sender_id}.jpg'
         else:
-            THUMB = t
+            THUMB = f'./{event.sender_id}.jpg'
     except Exception:
-        THUMB = t
+        THUMB = f'./{event.sender_id}.jpg'
     Drone = event.client
     DT = time.time()
     if hasattr(msg.media, "document"):

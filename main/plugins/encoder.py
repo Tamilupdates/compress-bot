@@ -23,7 +23,7 @@ from ethon.pyfunc import video_metadata
 
 from .. import Drone, BOT_UN
 
-from LOCAL.localisation import SUPPORT_LINK, JPG, JPG2, JPG3
+from LOCAL.localisation import SUPPORT_LINK
 from LOCAL.utils import ffmpeg_progress
 
 async def encode(event, msg, scale=0):
@@ -113,7 +113,7 @@ async def encode(event, msg, scale=0):
     if 'webm' in mime:
         try:
             uploader = await fast_upload(f'{out2}', f'{out2}', UT, Drone, edit, '**UPLOADING:**')
-            await Drone.send_file(event.chat_id, uploader, caption=text, thumb=JPG, force_document=True)
+            await Drone.send_file(event.chat_id, uploader, caption=text, force_document=True)
         except Exception as e:
             os.rmdir("encodemedia")
             print(e)
@@ -121,7 +121,7 @@ async def encode(event, msg, scale=0):
     elif 'x-matroska' in mime:
         try:
             uploader = await fast_upload(f'{out2}', f'{out2}', UT, Drone, edit, '**UPLOADING:**')
-            await Drone.send_file(event.chat_id, uploader, caption=text, thumb=JPG, force_document=True)
+            await Drone.send_file(event.chat_id, uploader, caption=text, force_document=True)
         except Exception as e:
             os.rmdir("encodemedia")
             print(e)
@@ -134,11 +134,11 @@ async def encode(event, msg, scale=0):
         attributes = [DocumentAttributeVideo(duration=duration, w=width, h=height, supports_streaming=True)]
         try:
             uploader = await fast_upload(f'{out2}', f'{out2}', UT, Drone, edit, '**UPLOADING:**')
-            await Drone.send_file(event.chat_id, uploader, caption=text, thumb=JPG3, attributes=attributes, force_document=False)
+            await Drone.send_file(event.chat_id, uploader, caption=text, attributes=attributes, force_document=False)
         except Exception:
             try:
                 uploader = await fast_upload(f'{out2}', f'{out2}', UT, Drone, edit, '**UPLOADING:**')
-                await Drone.send_file(event.chat_id, uploader, caption=text, thumb=JPG, force_document=True)
+                await Drone.send_file(event.chat_id, uploader, caption=text, force_document=True)
             except Exception as e:
                 os.rmdir("encodemedia")
                 print(e)

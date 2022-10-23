@@ -16,7 +16,6 @@ import os
 from .. import Drone
 from telethon import events, Button
 from LOCAL.localisation import START_TEXT as st
-from LOCAL.localisation import JPG0 as file
 from LOCAL.localisation import info_text, spam_notice, help_text, DEV, source_text, SUPPORT_LINK
 from ethon.teleutils import mention
 from ethon.mystarts import vc_menu
@@ -77,7 +76,7 @@ async def sett(event):
         x = await conv.get_reply()
         if not x.media:
             xx.edit("No media found.")
-        mime = x.file.mime_type
+        mime = x.mime_type
         if not 'png' in mime:
             if not 'jpg' in mime:
                 if not 'jpeg' in mime:
