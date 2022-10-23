@@ -266,7 +266,7 @@ async def fcomp(event):
         index = process1.index(f'{event.sender_id}')
         last = timer[int(index)]
         present = time.time()
-        return await event.answer(f"You have to wait {0-round(present-float(last))} seconds more to start a new process!", alert=True)
+        return await event.answer(f"You have to wait {300-round(present-float(last))} seconds more to start a new process!", alert=True)
     button = await event.get_message()
     msg = await button.get_reply_message()
     if not os.path.isdir("encodemedia"):
@@ -277,7 +277,7 @@ async def fcomp(event):
         now = time.time()
         timer.append(f'{now}')
         process1.append(f'{event.sender_id}')
-        await event.client.send_message(event.chat_id, 'You can start a new process again after 5 minutes.')
+        await event.client.send_message(event.chat_id, 'You can start a new process again..')
         await asyncio.sleep(0)
         timer.pop(int(timer.index(f'{now}')))
         process1.pop(int(process1.index(f'{event.sender_id}')))
@@ -293,7 +293,7 @@ async def hcomp(event):
         index = process1.index(f'{event.sender_id}')
         last = timer[int(index)]
         present = time.time()
-        return await event.answer(f"You have to wait {0-round(present-float(last))} seconds more to start a new process!", alert=True)
+        return await event.answer(f"You have to wait {300-round(present-float(last))} seconds more to start a new process!", alert=True)
     button = await event.get_message()
     msg = await button.get_reply_message()
     if not os.path.isdir("encodemedia"):
@@ -304,7 +304,7 @@ async def hcomp(event):
         now = time.time()
         timer.append(f'{now}')
         process1.append(f'{event.sender_id}')
-        await event.client.send_message(event.chat_id, 'You can start a new process again after 5 minutes.')
+        await event.client.send_message(event.chat_id, 'You can start a new process again..')
         await asyncio.sleep(0)
         timer.pop(int(timer.index(f'{now}')))
         process1.pop(int(process1.index(f'{event.sender_id}')))
