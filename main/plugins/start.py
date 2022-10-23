@@ -1,5 +1,5 @@
-#  This file is part of the VIDEOconvertor distribution.
-#  Copyright (c) 2021 vasusen-code ; All rights reserved. 
+#  This file is part of the Video Compress Bot distribution.
+#  Copyright (c) 2021 Tamilupdates ; All rights reserved. 
 #
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -10,7 +10,7 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 #  General Public License for more details.
 #
-#  License can be found in < https://github.com/vasusen-code/VIDEOconvertor/blob/public/LICENSE> .
+#  License can be found in < https://github.com/Tamilupdates/compress-bot/blob/public/LICENSE> .
 
 import os
 from .. import Drone
@@ -46,8 +46,8 @@ async def notice(event):
 async def source(event):
     await event.edit(source_text,
                     buttons=[[
-                         Button.url("FOR PERSONAL USE", url="https://github.com/vasusen-code/videoconvertor/tree/main"),
-                         Button.url("FOR YOUR CHANNEL ", url="https://github.com/vasusen-code/videoconvertor/")]])
+                         Button.url("FOR PERSONAL USE", url="https://github.com/Tamilupdates/compress-bot/tree/main"),
+                         Button.url("FOR YOUR CHANNEL ", url="https://github.com/Tamilupdates/compress-bot/")]])
                     
 @Drone.on(events.callbackquery.CallbackQuery(data="help"))
 async def help(event):
